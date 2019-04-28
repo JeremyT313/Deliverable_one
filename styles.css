@@ -1,0 +1,62 @@
+/* Global Styles */
+* {
+    font-family: "fira sans";
+    Background-color: #F0ECEE;
+}
+
+/* Tag Styles */
+
+li {
+    display: inline;
+}
+
+a {
+    display: inline-block;
+}
+
+/* Class Styles */
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:  #88898B;
+}
+
+.navbar a:hover {
+    color: #FF4850;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.adopt {
+    color: #FF4850;
+}
+
+.me {
+    font-weight: 600;
+    color: black;
+}
+
+.findout {
+    padding: 10px;
+    border-radius: 15px;
+    background: #FF4850;
+}
+
+.bulldog {
+    height: 500px;
+    width: 500px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
