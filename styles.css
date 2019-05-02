@@ -116,8 +116,7 @@ ul {
     .navbar {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 0;
-        padding-right: 50px;
+        padding: 0 50px;
         height: 70px;
         align-items: center;
     }
