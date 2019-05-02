@@ -5,10 +5,6 @@ body {
     background: #F0ECEE;
 }
 
-h3 {
-    padding: 50px;
-}
-
 a {
     text-decoration: none;
 }
@@ -30,7 +26,6 @@ ul {
 .navbar ul {
     display: flex;
     list-style: none;
-    padding: 50px;
     margin: 0;
     justify-content: space-around;
     align-content: flex-end;
@@ -47,9 +42,6 @@ ul {
 .logo {
     font-weight: 600;
     color: black;
-}
-
-.logo {
     font-size: 1.3rem;
 }
 
@@ -67,6 +59,10 @@ ul {
     display: block;
     text-align: center;
     align-items: center;
+}
+
+.button:hover {
+    background: #CCC
 }
 
 .container .button {
@@ -89,7 +85,6 @@ ul {
 
 .container a:hover {
     color: #FF4850;
-    background: #ccc;
 }
 
 .container p {
@@ -122,6 +117,7 @@ ul {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
+        padding-right: 50px;
         height: 70px;
         align-items: center;
     }
@@ -131,6 +127,7 @@ ul {
         margin-right: 15px;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
     }
 
     .main-nav li {
