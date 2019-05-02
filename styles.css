@@ -1,62 +1,153 @@
-/* Global Styles */
-* {
+/*********** global styles ***********/
+
+body {
     font-family: "fira sans";
-    Background-color: #F0ECEE;
+    background: #F0ECEE;
+    display: flex;
 }
 
-/* Tag Styles */
-
-li {
-    display: inline;
+h3 {
+    padding: 50px;
 }
 
 a {
-    display: inline-block;
+    text-decoration: none;
 }
 
-/* Class Styles */
+/********** Class Styles ***********/
+
+.main-nav {
+    display: flex;
+}
 
 .navbar ul {
+    display: flex;
     list-style: none;
     text-align: center;
-    padding: 0;
+    padding: 50px;
     margin: 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color:  #88898B;
+    justify-content: space-around;
+    align-content: flex-end;
 }
 
 .navbar a:hover {
     color: #FF4850;
 }
 
-.heading {
-    font-weight: 600;
+.main-nav a {
+    color: #88898B;
 }
 
-.adopt {
-    color: #FF4850;
-}
-
-.me {
+.logo {
     font-weight: 600;
     color: black;
 }
 
-.findout {
+.logo {
+    font-size: 1.3rem;
+}
+.adopt {
+    color: #FF4850;
+}
+
+.button {
+    border: #FF4850 1px solid;
+    color: white;
+    background: #FF4850;
     padding: 10px;
     border-radius: 15px;
-    background: #FF4850;
+    width: auto;
 }
 
-.bulldog {
-    height: 500px;
-    width: 500px;
+.container .button {
+    color: white;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.navbar .main-nav li:last-child a:hover {
+    background: #CCC;
+    color: #FF4850;
+}
+
+.heading {
+    font-weight: 600;
+    width: auto;
+}
+
+.container {   
+    width: 95%;
+    margin: auto;
+}
+
+.container a:hover {
+    color: #FF4850;
+    background: #ccc;
+}
+
+.container p {
+    margin-bottom: 50px;
+    color: #88898B;
+}
+
+.content {
+    font-weight: 400;
+}
+
+/*********** Media Queries ***********/
+
+@media (min-width: 768px) {
+    body {
+        background: url('img/bulldog.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    
+    .main-nav {
+        display: flex;
+        margin-right: 15px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .main-nav li {
+        margin: 0;
+    }
+    
+    .nav-links {
+        margin-left: 20px;
+    }
+
+    .content {
+        margin-top: 150px;
+        width: 35%;
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 400px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 90%;
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container li {
+        padding: 1px;
+        justify-content: space-between;
+    }
 }
