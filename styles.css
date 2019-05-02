@@ -23,7 +23,6 @@ a {
 .navbar ul {
     display: flex;
     list-style: none;
-    text-align: center;
     padding: 50px;
     margin: 0;
     justify-content: space-around;
@@ -46,6 +45,7 @@ a {
 .logo {
     font-size: 1.3rem;
 }
+
 .adopt {
     color: #FF4850;
 }
@@ -73,7 +73,7 @@ a {
     width: auto;
 }
 
-.container {   
+.container {
     width: 95%;
     margin: auto;
 }
@@ -100,6 +100,7 @@ a {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -107,18 +108,18 @@ a {
         height: 70px;
         align-items: center;
     }
-    
+
     .main-nav {
         display: flex;
         margin-right: 15px;
         flex-direction: row;
         justify-content: flex-end;
     }
-    
+
     .main-nav li {
         margin: 0;
     }
-    
+
     .nav-links {
         margin-left: 20px;
     }
@@ -130,7 +131,7 @@ a {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
     ul {
         list-style-type: none;
         margin: 0;
@@ -140,7 +141,6 @@ a {
     }
 
     .button {
-        width: 90%;
         display: block;
         text-align: center;
         align-items: center;
@@ -149,5 +149,9 @@ a {
     .container li {
         padding: 1px;
         justify-content: space-between;
+    }
+
+    .container .main-nav ul {
+        width: 100%;
     }
 }
